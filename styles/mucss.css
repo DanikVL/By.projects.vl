@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Comic Neue&display=swap');
+body {
+    font-family: Comic Neue,serif;
+  background: linear-gradient(90deg, #a66fc8 0%, #f99090 100%);
+}
+
+.nav-link {
+  color: aquamarine;
+}
+
+.navbar-nav .nav-link.active {
+  color: rgb(161, 161, 161);
+}
+
+.navbar-brand img {
+  width: 40px;
+}
+
+.navbar-toggler {
+  background-color: rgb(117, 112, 112);
+}
+.card-body{
+    color: aquamarine;
+    background: linear-gradient(90deg, rgb(180, 126, 197) 0%, #faaaaa 100%);
+}
+ .sidebar{
+    border-style:solid ;
+    border-color: rgb(69, 227, 255);
+    border-width: 0.1em;
+}
+a {
+  text-decoration: none;
+  color: rgb(69, 227, 255);
+  font-size: 1.1em;
+}
+p{
+  color: aquamarine;
+}
+.slide-text,
+.footer-text {
+  margin: auto auto;
+}
+.coll-anim{
+  animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+@media (max-width: 755px){
+  .carousel-indicators{
+    display: none;
+  }
+}
+footer,
+.btn-outline-primary{
+  background: linear-gradient(90deg, #f99090 0%, #a66fc8 100%);
+}
+.media-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+
+
